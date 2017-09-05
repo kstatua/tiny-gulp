@@ -6,10 +6,15 @@
 Let's call this Working area as TG (Tiny-Gulp)
 
 TG has some optional package like: 
+    
     - browser-sync -> Reload the modified files and auto-reload browser pages.
+    
     - gulp-nunjucks-render -> Improve your performance with HTML rendering
+    
     - gulp-data -> need to manage global.json and improve to the MAX nunjunks
+    
     - gulp-sourcemaps -> Provide you to have CSS/SCSS/LESS sourcemaps
+    
     - gulp-uglify -> Let's minify source code
 
 
