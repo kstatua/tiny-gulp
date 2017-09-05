@@ -1,8 +1,7 @@
 #
-# @title: Tiny-Gulp
-# @description: tiny, clear and semi-complete gulp runner
-# @language:    Node.js 
-#
+# Tiny-Gulp
+# tiny, clear and semi-complete gulp runner 
+# v 0.0.1 (alpha)
 
 Let's call this Working area as TG (Tiny-Gulp)
 
