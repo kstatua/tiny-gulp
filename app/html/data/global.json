@@ -1,0 +1,8 @@
+{
+    "pages": {
+        "main": {
+            "title"         : "Tiny-gulp - Main Page",
+            "description"   : "A fresh and new gulp bundle!"
+        }
+    }
+}

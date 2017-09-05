@@ -1,0 +1,72 @@
+{#
+    Nunjucks Templating!
+    Homepage: https://mozilla.github.io/nunjucks/
+    Docs: https://mozilla.github.io/nunjucks/api.html
+#}
+
+{% extends "layout/default.html" %}
+
+{% set pageTitle = pages.main.title %}
+
+<!-- TEMPLATE -->
+{% block pageContent %}
+<h1 class="title">Tiny-Gulp</h1>
+<p  class="description">A tiny and ready to use Gulp Working area</p>
+
+<h2 class="title">Additional information</h2>
+<p  class="information">This platform use 3 main tasks runner:</p>
+<ul>
+    <li class="command">
+        <span class="title">
+            gulp
+        </span>
+        <p class="description">
+            Run gulp in localhost, HAVE FUN!
+        </p>
+    </li>
+    <!--
+    <li class="command">
+        <span class="title">
+            gulp deploy
+        </span>
+        <p class="description">
+            You can add you custom path in order to duplicate the generated files in the right website's area
+            See gulpfile.js/index.js
+        </p>
+    </li>
+    <li class="command">
+        <span class="title">
+            gulp clean
+        </span>
+        <p class="description">
+            Removing all generated files
+        </p>
+    </li>
+    -->
+    <style>
+    .command:first-child {
+        margin-top: 0;
+    }
+    .command {
+        margin: 10px 0;
+        list-style: none;
+    }
+    .command .title {
+        display: inline-block; 
+        margin: 5px 0; 
+        padding: 10px 40px; 
+        background: #efefef;
+    }
+    .command .description {
+        margin: 0;
+    }
+    </style>
+</ul>
+<div class="list">
+    <h3>List of Html in Html folder</h3>
+    {% for file in files %}
+    <li><a href="{{ file }}">{{ file }}</a></li>
+    {% endfor %}
+</div>
+{% endblock %}
+<!-- end TEMPLATE -->
